@@ -1,0 +1,19 @@
+%导言区
+
+\documentclass{ctexart}
+\bibliographystyle{plain} % plain unsrt alpha abbrv 指定排版样式。
+
+% usepackage{ctex}
+
+%正文区
+\begin{document}
+	就像\cite{石弘一2018机器学习综述}中说的那样。
+	
+	这是另一个引用。	\cite{hara3dcnns}
+	
+	\bibliography{test} %指定参考文献数据库。
+%	\cite{石弘一2018机器学习综述}
+	%如果正文中未引用，则参考文献中不会出现。
+	\nocite{*} %输出所有未引用的参考文献。
+\end{document}
+% 对参考文献数据库文件可以使用jabref 软件进行可视化管理。

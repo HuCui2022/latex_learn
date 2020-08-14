@@ -1,0 +1,42 @@
+\documentclass{ctexart}
+\usepackage{amsmath}
+\begin{document}
+	
+	\section{行间公式}
+	\section{美元符号}
+	
+	交换律是 $$a+b = b+a$$
+	如：$$1=2 = 2+1 $$
+	
+	\subsection{中括号}
+	\[ a +b=b+a \]
+	
+	\subsection{displaymath}
+	\begin{displaymath}	
+		a +b = b+a
+	\end{displaymath}
+	
+	\subsection{自动编号公式equation 环境}
+	
+	交换律如式\ref{eq：1}
+	\begin{equation}
+		a + b = b+a  \label{eq：1}
+	\end{equation}
+	
+	
+	\subsection{不编号的公式equation*环境}
+%	\begin{equation*}
+%		a+b=b+a
+%	\end{equation*} 需要使用amsmath宏包。
+	
+	公式的编号和交叉引用也是自动实现的，大家在排版的时候，要习惯于采用自动话
+	的方式处理诸如图，表，公式的编号与交叉引用。再如公式\ref{eq:pol}
+	\begin{equation}
+		x^5 - 7x^3+4x=0 \label{eq:pol}
+	\end{equation}	
+	
+	
+	
+	
+	
+\end{document}
