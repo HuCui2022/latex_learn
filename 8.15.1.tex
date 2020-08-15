@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{fontspec} %调用字体，XELETX中。
+% 设置正文罗马，无衬线，打字机字体组。
+\setmainfont{Times New Roman}
+\setsansfont{Verdana}
+\setmonofont{Courier New}
+
+% 将字体设置为一个命令。
+\newcommand{\xinziti}{\fontencoding{OT1}
+	\fontfamily{pzc}
+	\fontseries{mb}
+	\fontshape{it}
+	\fontsize{14}{7}
+	\selectfont}
+
+\begin{document}
+	% 粗体后边会和引号相连，使用斜体矫正符号。 \/ p65	
+	Bold `{\bfseries leaf}'\\
+	Bold `{\bfseries leaf\/}'\\
+	Bold `\textbf{leaf}'\\
+	
+	% it 字体会自动加入斜体矫正，要取消的话，使用nocorr
+	\textit{M}M\\
+	\textit{M\nocorr}M
+	
+	%字体族，系列，形状，大小。组合：
+	\fontencoding{OT1}
+	\fontfamily{pzc}
+	\fontseries{mb}
+	\fontshape{it}
+	\fontsize{14}{7}
+	\selectfont
+	PostScript New Century Schoolbook
+	
+	
+	%也可以一次性选择某个形状。
+	\usefont{OT1}{pzc}{mb}{it}
+	PostScript Bookman Demibold Normal
+	
+	%使用自己定义的字体命令。
+	\xinziti PostScript New Century Schoolbook
+	
+	
+\end{document}
