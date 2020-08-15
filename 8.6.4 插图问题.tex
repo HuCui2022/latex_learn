@@ -1,0 +1,41 @@
+% 导言区
+
+\documentclass{ctexart} % ctexbook ,ctexrep
+
+%\usepackage{ctex}
+
+% 插图的宏包
+% 宏包： \usepackage{graphicx}
+% 语法： \includegraphics[选项]{文件名}
+% 格式： EPS,PDF,PNG,JPEG,BMP
+
+\usepackage{graphicx}
+\graphicspath{{figures/}，{pics/}} %图片在当前目录下的 figures 目录。
+
+%正文
+
+\begin{document}	
+	\LaTeX{}中的插图：
+	\includegraphics[scale=0.5]{girls}
+	\includegraphics[scale=0.3]{girls2}
+	\includegraphics[scale=0.3]{girls3}
+	\includegraphics[width=2cm]{girls}
+	\includegraphics[width=2cm]{girls2}
+	\includegraphics[width=2cm]{girls3}
+	
+	
+	\includegraphics[height=0.1\textheight]{girls}
+	\includegraphics[height=0.1\textheight]{girls2}
+	\includegraphics[height=0.1\textheight]{girls3}
+	
+	\includegraphics[width=0.2\textwidth]{girls}
+	\includegraphics[width=0.2\textwidth]{girls2}
+	\includegraphics[width=0.2\textwidth]{girls3}
+	
+	\includegraphics[angle=45,width=0.2\textwidth]{girls}
+	\includegraphics[width=0.2\textwidth]{girls2}
+	\includegraphics[angle=45,width=0.2\textwidth]{girls3}
+	
+	
+	
+\end{document}
