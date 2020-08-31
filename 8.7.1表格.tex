@@ -1,0 +1,28 @@
+% 导言区
+
+\documentclass{ctexart} %ctexbook,ctexrep
+
+%\usepackage{ctex}
+
+% 正文区（文稿区）
+%\tabular 关键字。 l,c.r,p.来进行设置表格形式。
+
+\begin{document}
+	\begin{tabular}{l ||c |c |c |p{1.5cm}}
+		\hline \hline
+		姓名 & 语文 & 数学 & 外语 & 备注\\
+		\hline
+		张三 & 89 & 100 & 70 & 优秀\\
+		张三 & 89 & 100 & 70 & 优秀\\
+		张三 & 89 & 100 & 70 & 优秀\\
+		张三 & 89 & 100 & 70 & 优秀\\
+		
+		\hline
+		\hline
+	\end{tabular}
+\end{document}
+
+% 由p产生的内容，当内容超过时，自动换行。
+% texdoc booktab 查看相应文档设置。
+% texdoc longtab 跨页长表格。
+% texdoc tabu 综合表格宏包

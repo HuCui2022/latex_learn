@@ -1,0 +1,59 @@
+%导言区
+\documentclass[UTF8]{article} %注意，这里article ，否则 greek 不能用。
+\usepackage[greek, english]{babel}
+\usepackage{ctex}
+\usepackage[utf8]{inputenc}
+\usepackage[OT2,T1]{fontenc} %俄文。
+
+
+%正文
+\begin{document}
+	\textgreek{abcde} % textgreek 需要article，不能texart 。
+cafe
+	
+	{\fontencoding{OT2}\selectfont kopaanga}
+	
+	shelfful \\  %会自动将f相互连接起来。
+	shellf{}ful\\
+	shelf\/ful\\
+	
+	
+	% cafe godel antonin dvorak oster vra kirkagac
+	
+	caf\'e\\
+	G\"odel\\
+	Anton\'in Dvo\u{r}\'ak\\
+	\O ster Vr\r{a}\\
+	K\i rka\u{g}a\c{c}
+	\~o\\
+	\=x\\
+	\.t\\
+	\u{s}\\
+	\r{y}\\
+	\b{o}\\
+	\d{e}\\
+	\H{s}\\
+	\v{e}\\
+	\c{r}
+	
+	\O \\
+	\o \\
+	\L \\
+	
+	%标点符号。
+	% - 一个表示连字符。 两个表示数字范围。 三个表示破折号。
+	afb-cdda\\
+	120--1300\\
+	他的意思{---}你是个大傻逼。\\%为什么中文不显示破折号呢？？？
+	his means---you are fool!
+	
+	% \ldot 和 \dot
+	GOOD: one, two, three\ldots \\
+	BAD: one, two, three\dots \\
+	NO: one, two, three\textellipsis \\
+	YES: one, two, three...
+	
+	%注意一般要将dot,ldot放入$$数学公式中，因为dot前后间距不一样。
+	
+	
+\end{document}

@@ -1,0 +1,43 @@
+% 大写字母后的.和小写字母缩写后的. 和正常的结尾句号.的间隔是不一样的。
+%所以必须进行显式的设置。
+
+\documentclass{article}
+\usepackage{ctex}
+
+\usepackage{xeCJK} %控制汉字与其他字体空格的宏包。
+%\CJKsetecglue{} %禁用汉字与其他字体间的空格。
+
+\begin{document}
+	
+	A sentence. And another.
+	
+	U.S.A. means United States Army?
+	
+	Tinker et al.\ made the dauble play. %\空格 表示正常单词之间的间距。
+	
+	Tinker et al. made the dauble play.  %如果不加\空格 的话，系统会认为al.是句末。
+	%空格间距会不同。
+	
+	Roman number XII\@. Yes.%用\@指明 是大写字母的句末。
+	
+	Roman number XII. Yes.%@ 表示句末。使得系统正确的结束。
+	%否则系统会认为是大写字母的缩写的格式。 大写字母.   这种。
+	
+	汉字word
+	
+	
+	%幻影占位符。
+	你给我\phantom{参数党啊啊手动阀}速速滚蛋。%空格大小就是参数内容所占大小。
+%	类似
+	\hphantom \vphantom
+	
+	%\\ 和 \linebreak
+	
+	这是一行文字。\\第二行文字。
+	
+	这是一行文字。\linebreak 第二行文字。%会将第一行的内容均匀散列充满整行。
+	
+	
+	数学公式中使用\\分行的，注意如果第二行有方括号，那\textbackslash \textbackslash 后边\{\}需要加上。
+	
+\end{document}

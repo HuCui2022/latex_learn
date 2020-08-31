@@ -1,0 +1,90 @@
+
+
+%latex中，一个字体有五种属性。
+
+%字体编码：
+%正文字编码：OT1,T1,EU1等。
+%数学字体编码，OML，OMS，OMX等。
+
+%字体族
+%罗马字体：笔画起始处有装饰
+%无衬线字体：壁画起始处无装饰
+%打字机字体：么个字符宽度相同，又称为等宽字体。
+
+%字体系列。
+%宽度，粗细。
+
+%字体形状
+%直立
+%斜体
+%伪斜体
+%小型大写
+
+%字体大小
+
+%导言区
+\documentclass[12pt]{article}%如果不用宏包的话，
+%\documentclass{ctexart}也可用来处理中文。
+ %book,report,letter.ctexbook,ctexreport,
+ %ctexletter.
+\usepackage{ctex}%导入中文处理宏包。
+\newcommand{\myfont}{\textbf{\textsf{Fancy Text}}}
+
+
+%正文区（文稿区）
+\begin{document}
+	\textrm{Roman Family} %罗马字体。
+	\textsf{Sans Serif Family}%无衬线字体
+	\texttt{Typewriter Family}%打字机字体。
+	
+	\rmfamily Roman Family {\sffamily Sans Serif Family} {\ttfamily Typewriter Family}
+	
+	%以上两种方法都是可以的。
+	{\rmfamily An 11-year-old boy in the American state of Rhode Island recently discovered an unusual example of sea life. He found what is thought to be one of the largest quahogs ever found in the state. Quahogs are a kind of large clam that is eaten as food.}
+	
+	{\sffamily Cooper Monaco was looking for clams with his grandfather when he found the large creature.}
+	
+	 {\ttfamily Monaco gave it to the University of Rhode Island's Marine Science Research Facility in Narragansett, the university said in a recent statement.}
+	
+	%字体系列设置，粗细，宽度。中等权重md，粗体bf。
+	\textmd{Medium Series} \textbf{Boldface Series}
+	
+	{\mdseries Medium Series} {\bfseries Boldface Series}
+
+
+	%字体形状设置。直体，斜体，伪斜体，小型大写。
+	\textup{Upright Shape} \textit{Italic Shape}
+	\textsl{Slanted Shape} \textsc{Small Caps Shape}
+	
+	{\upshape Upright Shape} {\itshape }
+	{\slshape Slanted Shape} {\scshape Small Caps Shape}
+	
+	
+	%中文字体。要使用ctex宏包。否则无法使用。
+	{\songti 宋体} \quad {\heiti 黑体} \quad {\fangsong 仿宋} \quad
+	{\kaishu 楷书}
+	
+	中文字体的 \textbf{粗体} 和 \textit{斜体} %粗体用黑体表示，斜体用楷书表示。
+	
+	
+	%字体大小的设置。 大小都是与normalsize 相比较的，normlsize的大小是有文档类参数控制。方括号内添加。
+	{\tiny hello} \\
+	{\scriptsize hello} \\
+	{\small hello} \\
+	{\normalsize hello} \\
+	{\large hello} \\
+	{\Large hello} \\
+	{\LARGE hello} \\
+	{\huge hello} \\
+	{\Huge hello} \\
+	
+	%中文字号设置。
+	\zihao{4} 你好
+	\myfont 我不好
+\end{document}
+
+%texdoc ctex在命令行窗口中打开，ctex手册。
+%一般不在正文中直接使用命令，而是用newcommand{\myfont}{\textbf{\textsf{Fancy Text}}
+
+
+
