@@ -1,0 +1,87 @@
+\contentsline {section}{\numberline {1}封面}{4}%
+\contentsline {section}{\numberline {2}numpy基础}{4}%
+\contentsline {subsection}{\numberline {2.1}创建ndarray}{4}%
+\contentsline {subsection}{\numberline {2.2}利用数组进行数据处理}{5}%
+\contentsline {subsection}{\numberline {2.3}将条件逻辑表述为数组运算}{6}%
+\contentsline {subsection}{\numberline {2.4}数学和统计方法}{8}%
+\contentsline {subsection}{\numberline {2.5}用于布尔型数组的方法}{8}%
+\contentsline {subsection}{\numberline {2.6}排序}{10}%
+\contentsline {subsection}{\numberline {2.7}用于数组的文件输入输出}{10}%
+\contentsline {subsection}{\numberline {2.8}存取文本文件}{10}%
+\contentsline {subsection}{\numberline {2.9}线性代数}{11}%
+\contentsline {subsection}{\numberline {2.10}随机数生成}{11}%
+\contentsline {subsection}{\numberline {2.11}范例，随机漫步}{11}%
+\contentsline {subsection}{\numberline {2.12}一次模拟多个随机漫步}{14}%
+\contentsline {section}{\numberline {3}pandas 入门}{14}%
+\contentsline {subsection}{\numberline {3.1}Series Class}{14}%
+\contentsline {subsection}{\numberline {3.2}DataFrame Class}{15}%
+\contentsline {subsection}{\numberline {3.3}Index Objects 索引对象}{17}%
+\contentsline {subsection}{\numberline {3.4}Essential Functionality}{17}%
+\contentsline {subsection}{\numberline {3.5}reindexing 索引重建}{17}%
+\contentsline {subsection}{\numberline {3.6}Dropping Entries from an Axis}{17}%
+\contentsline {subsection}{\numberline {3.7}Indexing, Selection, and Filtering索引、选择和筛选}{18}%
+\contentsline {subsubsection}{\numberline {3.7.1}indexing}{18}%
+\contentsline {subsubsection}{\numberline {3.7.2}Selection with loc and iloc (loc,iloc)}{19}%
+\contentsline {subsubsection}{\numberline {3.7.3}Integer Indexes 整数索引}{19}%
+\contentsline {subsection}{\numberline {3.8}Arithmetic and Data Alignment. 算法和数据对齐}{19}%
+\contentsline {subsection}{\numberline {3.9}Arithmetic methods with fill values 填充值的算数方法}{19}%
+\contentsline {subsection}{\numberline {3.10}Operations between DataFrame and Series}{19}%
+\contentsline {subsection}{\numberline {3.11}Function Application and Mapping 函数应用与映射}{22}%
+\contentsline {subsection}{\numberline {3.12}Sorting and Ranking}{22}%
+\contentsline {subsection}{\numberline {3.13}Axis Indexes with Duplicate Labels 具有重复标签的轴索隐}{23}%
+\contentsline {subsection}{\numberline {3.14}Summarizing and Computing Descriptive Statistics 汇总计算描述性统计}{23}%
+\contentsline {subsection}{\numberline {3.15}Correlation and Covariance 相关以及协方差}{23}%
+\contentsline {subsection}{\numberline {3.16}Unique Values, Value Counts, and Membership}{25}%
+\contentsline {section}{\numberline {4}Data Loading, Storage, and File Formats}{25}%
+\contentsline {subsection}{\numberline {4.1}Reading and Writing Data in Text Format}{25}%
+\contentsline {subsection}{\numberline {4.2}Writing Data to Text Format}{27}%
+\contentsline {subsection}{\numberline {4.3}Working with Delimited Formats重点}{27}%
+\contentsline {subsection}{\numberline {4.4}JSON Data}{29}%
+\contentsline {subsection}{\numberline {4.5}XML and HTML : Web Scraping}{29}%
+\contentsline {subsection}{\numberline {4.6}Parsing XML with lxml.objectify}{30}%
+\contentsline {subsection}{\numberline {4.7}Binary Data Formats}{30}%
+\contentsline {subsection}{\numberline {4.8}Using HDF5 Format}{31}%
+\contentsline {subsection}{\numberline {4.9}Reading Microsoft Excel Files}{31}%
+\contentsline {subsection}{\numberline {4.10}Interacting with Web APIs}{32}%
+\contentsline {subsection}{\numberline {4.11}Interacting with Databases}{32}%
+\contentsline {section}{\numberline {5}数据清洗与准备}{33}%
+\contentsline {subsection}{\numberline {5.1}数据缺失处理}{33}%
+\contentsline {subsection}{\numberline {5.2}Data Transformation}{33}%
+\contentsline {subsubsection}{\numberline {5.2.1}数据冗余}{33}%
+\contentsline {subsubsection}{\numberline {5.2.2}基于索引的转换}{34}%
+\contentsline {subsubsection}{\numberline {5.2.3}Replicing Values}{35}%
+\contentsline {subsubsection}{\numberline {5.2.4}改变索引名称}{35}%
+\contentsline {subsubsection}{\numberline {5.2.5}离散与分组}{35}%
+\contentsline {subsubsection}{\numberline {5.2.6}检测和过滤异常}{35}%
+\contentsline {subsubsection}{\numberline {5.2.7}排列和随机抽样}{36}%
+\contentsline {subsubsection}{\numberline {5.2.8}指示器和哑变量}{36}%
+\contentsline {subsection}{\numberline {5.3}string 相关操作}{37}%
+\contentsline {section}{\numberline {6}数据的整理join，combine，reshpae}{39}%
+\contentsline {subsection}{\numberline {6.1}多重索引}{39}%
+\contentsline {subsection}{\numberline {6.2}setindex,resetincex}{39}%
+\contentsline {subsection}{\numberline {6.3}三大链接神奇：merge,jion,concat}{40}%
+\contentsline {subsection}{\numberline {6.4}相同类型的表格的合并}{41}%
+\contentsline {subsection}{\numberline {6.5}reshpae,pivoting}{42}%
+\contentsline {section}{\numberline {7}绘图和可视化}{42}%
+\contentsline {subsection}{\numberline {7.1}初级教程}{42}%
+\contentsline {subsection}{\numberline {7.2}在图像上标记}{43}%
+\contentsline {subsection}{\numberline {7.3}保存图片}{46}%
+\contentsline {subsection}{\numberline {7.4}用pandas和seaborn绘图}{46}%
+\contentsline {subsection}{\numberline {7.5}多维数据的绘图}{48}%
+\contentsline {section}{\numberline {8}数据聚合分组操作}{48}%
+\contentsline {subsection}{\numberline {8.1}中位数和桶分析}{53}%
+\contentsline {subsection}{\numberline {8.2}透视表}{55}%
+\contentsline {section}{\numberline {9}时间序列}{55}%
+\contentsline {subsection}{\numberline {9.1}Date Ranges, Frequencies, and Shifting}{57}%
+\contentsline {subsection}{\numberline {9.2}shifting time}{60}%
+\contentsline {subsection}{\numberline {9.3}时区设定}{60}%
+\contentsline {subsection}{\numberline {9.4}时间区间}{61}%
+\contentsline {subsection}{\numberline {9.5}时间区间转换p.asfreq}{61}%
+\contentsline {subsection}{\numberline {9.6}季度周期}{61}%
+\contentsline {subsection}{\numberline {9.7}时间采样，上下混合采样等}{62}%
+\contentsline {subsection}{\numberline {9.8}滑动窗口rolling()}{63}%
+\contentsline {subsection}{\numberline {9.9}指数加权函数}{64}%
+\contentsline {section}{\numberline {10}pandas 高级部分}{66}%
+\contentsline {subsection}{\numberline {10.1}分类类类型categorical}{66}%
+\contentsline {subsection}{\numberline {10.2}categorical 类型的计算效率}{66}%
+\contentsline {section}{\numberline {11}groupby 更加高级的用法}{68}%
