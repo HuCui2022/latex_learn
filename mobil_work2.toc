@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}MobileNetV1}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}工作基础}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}深度可分离卷积}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}网络结构}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}超参$\aleph $和$\rho $}{2}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}窄网络}{2}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}多分辨率效果}{4}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.5}与其他卷积网络框架对比}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}小结}{6}{subsection.1.6}%
+\contentsline {section}{\numberline {2}MobileNetV2}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Linear BottelNeck的提出}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}反残差 Inverted residuals}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}效果比较}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}小结}{10}{subsection.2.4}%
+\contentsline {section}{\numberline {3}MobileNetV3}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}结构特点}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}互补网络搜索}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}网络的改进于h-swish}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}网络结构}{13}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}效果对比}{13}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}小结}{13}{subsection.3.6}%
+\contentsline {section}{\numberline {4}简单的实验}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}数据集}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}实验内容}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}还未完成的工作}{17}{subsection.4.3}%
+\contentsline {section}{\numberline {A}附录：数据集与代码地址}{20}{appendix.1.A}%

@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: mobil_work2.aux
+The style file: plain.bst
+Database file #1: mob.bib
+Warning--empty journal in 2019hard-swish
+Warning--empty journal in 2016Xception
+Warning--empty journal in 2016Bridging
+Warning--empty journal in MobV3
+Warning--empty journal in 2017MobileNets
+Warning--empty journal in 2015Batch
+Warning--empty journal in 13
+Warning--empty journal in COCO
+Warning--empty journal in 21
+Warning--empty journal in ShuffleNet2
+Warning--empty journal in 22
+Warning--empty journal in 2015Structured
+Warning--empty journal in NetAdapt
+Warning--empty journal in ShuffleNet
+Warning--empty journal in NasNet
+You've used 36 entries,
+            2118 wiz_defined-function locations,
+            657 strings with 9872 characters,
+and the built_in function-call counts, 11998 in all, are:
+= -- 1060
+> -- 847
+< -- 2
++ -- 333
+- -- 296
+* -- 857
+:= -- 2153
+add.period$ -- 108
+call.type$ -- 36
+change.case$ -- 256
+chr.to.int$ -- 0
+cite$ -- 51
+duplicate$ -- 412
+empty$ -- 758
+format.name$ -- 296
+if$ -- 2367
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 36
+newline$ -- 183
+num.names$ -- 72
+pop$ -- 291
+preamble$ -- 1
+purify$ -- 220
+quote$ -- 0
+skip$ -- 294
+stack$ -- 0
+substring$ -- 346
+swap$ -- 49
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 144
+warning$ -- 15
+while$ -- 81
+width$ -- 38
+write$ -- 358
+(There were 15 warnings)

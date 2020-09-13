@@ -1,0 +1,175 @@
+\begin{thebibliography}{10}
+
+\bibitem{2}
+Wenlin Chen, James~T Wilson, Stephen Tyree, Kilian~Q Weinberger, and Yixin
+  Chen.
+\newblock Compressing neural networks with the hashing trick.
+\newblock {\em Computer Science}, pages 2285--2294, 2015.
+
+\bibitem{2016Xception}
+Franois Chollet.
+\newblock Xception: Deep learning with depthwise separable convolutions.
+\newblock 2016.
+
+\bibitem{4}
+Matthieu Courbariaux, Yoshua Bengio, and Jean~Pierre David.
+\newblock Training deep neural networks with low precision multiplications.
+\newblock {\em Computer ence}, 2014.
+
+\bibitem{5}
+Song Han, Huizi Mao, and William~J Dally.
+\newblock Deep compression: Compressing deep neural networks with pruning,
+  trained quantization and huffman coding.
+\newblock In {\em ICLR}, 2016.
+
+\bibitem{resnet}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em IEEE Conference on Computer Vision \& Pattern Recognition},
+  2016.
+
+\bibitem{9}
+Geoffrey Hinton, Oriol Vinyals, and Jeff Dean.
+\newblock Distilling the knowledge in a neural network.
+\newblock {\em Computer ence}, 14(7):38--39, 2015.
+
+\bibitem{MobV3}
+Andrew Howard, Mark Sandler, Grace Chu, Liang~Chieh Chen, Bo~Chen, Mingxing
+  Tan, Weijun Wang, Yukun Zhu, Ruoming Pang, and Vijay~and Vasudevan.
+\newblock Searching for mobilenetv3.
+\newblock 2019.
+
+\bibitem{2017MobileNets}
+Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
+  Tobias Weyand, Marco Andreetto, and Hartwig Adam.
+\newblock Mobilenets: Efficient convolutional neural networks for mobile vision
+  applications.
+\newblock 2017.
+
+\bibitem{11}
+Itay Hubara, Matthieu Courbariaux, Daniel Soudry, Ran El-Yaniv, and Yoshua
+  Bengio.
+\newblock Quantized neural networks: Training neural networks with low
+  precision weights and activations.
+\newblock {\em Journal of Machine Learning Research}, 18, 2016.
+
+\bibitem{DBLP:journals/corr/IandolaMAHDK16}
+Forrest~N. Iandola, Matthew~W. Moskewicz, Khalid Ashraf, Song Han, William~J.
+  Dally, and Kurt Keutzer.
+\newblock Squeezenet: Alexnet-level accuracy with 50x fewer parameters and
+  {\textless}1mb model size.
+\newblock {\em CoRR}, abs/1602.07360, 2016.
+
+\bibitem{2015Batch}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock 2015.
+
+\bibitem{13}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock 2015.
+
+\bibitem{14}
+Max Jaderberg, Andrea Vedaldi, and Andrew Zisserman.
+\newblock Speeding up convolutional neural networks with low rank expansions.
+\newblock {\em Computer ence}, 4(4):XIII, 2014.
+
+\bibitem{2014Flattened}
+Jonghoon Jin, Aysegul Dundar, and Eugenio Culurciello.
+\newblock Flattened convolutional neural networks for feedforward acceleration.
+\newblock {\em Computer Science}, 2014.
+
+\bibitem{20}
+Vadim Lebedev, Yaroslav Ganin, Maksim Rakhuba, Ivan Oseledets, and Victor
+  Lempitsky.
+\newblock Speeding-up convolutional neural networks using fine-tuned
+  cp-decomposition.
+\newblock {\em Computer ence}, 2014.
+
+\bibitem{21}
+Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
+  Cheng~Yang Fu, and Alexander~C Berg.
+\newblock Ssd: Single shot multibox detector.
+\newblock 2016.
+
+\bibitem{22}
+Mohammad Rastegari, Vicente Ordonez, Joseph Redmon, and Ali Farhadi.
+\newblock Xnor-net: Imagenet classification using binary convolutional neural
+  networks.
+\newblock 2016.
+
+\bibitem{YOLO9000}
+Joseph Redmon and Ali Farhadi.
+\newblock Yolo9000: Better, faster, stronger.
+\newblock In {\em IEEE Conference on Computer Vision \& Pattern Recognition},
+  pages 6517--6525, 2017.
+
+\bibitem{23}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock {\em IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+  39(6):1137--1149, 2017.
+
+\bibitem{MOBV2}
+Mark Sandler, Andrew~G. Howard, Menglong Zhu, Andrey Zhmoginov, and
+  Liang{-}Chieh Chen.
+\newblock Inverted residuals and linear bottlenecks: Mobile networks for
+  classification, detection and segmentation.
+\newblock {\em CoRR}, abs/1801.04381, 2018.
+
+\bibitem{2014Rigid}
+Laurent Sifre and Stéphane Mallat.
+\newblock Rigid-motion scattering for texture classification.
+\newblock {\em Computer ence}, 3559:501--515, 2014.
+
+\bibitem{2015Structured}
+Vikas Sindhwani, Tara~N Sainath, and Sanjiv Kumar.
+\newblock Structured transforms for small-footprint deep learning.
+\newblock 2015.
+
+\bibitem{MnasNet}
+Mingxing Tan, Bo~Chen, Ruoming Pang, Vijay Vasudevan, and Quoc~V. Le.
+\newblock Mnasnet: Platform-aware neural architecture search for mobile.
+\newblock {\em CoRR}, abs/1807.11626, 2018.
+
+\bibitem{36}
+Jiaxiang Wu, Cong Leng, Yuhang Wang, Qinghao Hu, and Jian Cheng.
+\newblock Quantized convolutional neural networks for mobile devices.
+\newblock In {\em 2016 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 2016.
+
+\bibitem{renet2}
+Saining Xie, Ross Girshick, Piotr Dollár, Zhuowen Tu, and Kaiming He.
+\newblock Aggregated residual transformations for deep neural networks.
+\newblock In {\em 2017 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 2017.
+
+\bibitem{NetAdapt}
+Tien~Ju Yang, Andrew Howard, Bo~Chen, Xiao Zhang, Alec Go, Vivienne Sze, and
+  Hartwig Adam.
+\newblock Netadapt: Platform-aware neural network adaptation for mobile
+  applications.
+\newblock 2018.
+
+\bibitem{2015Deep}
+Zichao Yang, Marcin Moczulski, Misha Denil, Nando De~Freitas, Alex Smola,
+  Le~Song, and Ziyu Wang.
+\newblock Deep fried convnets.
+\newblock {\em Computer Science}, 2015.
+
+\bibitem{ShuffleNet}
+Xiangyu Zhang, Xinyu Zhou, Mengxiao Lin, and Jian Sun.
+\newblock Shufflenet: An extremely efficient convolutional neural network for
+  mobile devices.
+\newblock 2017.
+
+\bibitem{NasNet}
+Barret Zoph and Quoc~V. Le.
+\newblock Neural architecture search with reinforcement learning.
+\newblock 2016.
+
+\end{thebibliography}

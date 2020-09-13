@@ -1,0 +1,65 @@
+% 声明文档类型为book类
+\documentclass[a4paper,10pt]{article} %设置为A4纸，文字默认大小为五号字体，默认是双面打印
+
+% 导言区
+
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{ctex} %导入中文包
+\usepackage{geometry} %设置页边距的包
+
+\usepackage{pdfpages} %本文最重要的一个包，就是将PDF文件加入到封面位置
+
+\geometry{left=2.5cm,right=2cm,top=2.54cm,bottom=2.54cm} %设置书籍的页边距
+\usepackage{titlesec}%设置标题格式。/
+\usepackage{hyperref}
+% 开始书籍主体内容
+\usepackage{amsmath}
+
+
+
+
+\title{MobileNet系列论文阅读分析}
+\date{\today}
+\author{崔虎}
+
+
+\begin{document}
+
+\maketitle	
+	% 插入封面
+%	\include{fengmian.pdf} %此处是调用外置的定义好的封面文件
+	
+	% 插入摘要
+%	\frontmatter
+	
+%	\include{/webmin/封面}
+	%\include{./Tex_files/chapter英文摘要}
+	
+	% 插入目录
+	\tableofcontents
+	
+	% 插入正文
+%	\mainmatter
+	
+	
+	\section{数值计算}
+	
+%	\include{./TeX_files/chapter01}
+%	\include{./TeX_files/chapter02}
+%	\include{./TeX_files/chapter03}
+%	\include{./TeX_files/chapter04}
+%	\include{./TeX_files/chapter05}
+%	\include{./TeX_files/chapter06}
+	
+	\section{矩阵分析}
+%	\include{./TeX_files/chapter07}
+	
+	% 插入参考文献、致谢等
+%	\backmatter
+	
+	% bibliography, glossary and index would go here.
+	
+\end{document}

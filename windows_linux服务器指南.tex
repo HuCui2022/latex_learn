@@ -1,0 +1,169 @@
+%导言区
+
+\documentclass{ctexart}
+
+\usepackage[a4paper,left=10mm,right=10mm,top=15mm,bottom=15mm]{geometry} 
+\usepackage{listings}
+\setlength{\parindent}{0pt}% 去掉首行缩进。
+%\usepackage{titlesec}
+
+% usepackage{ctex}
+\title{windows链接服务器指南}
+\date{\today}
+\author{cuihu}
+
+% 有一个宏包，可以自动产生pdf目录。
+
+% 有一个宏包，可以自动产生superref 宏框的引用的超链接。
+
+
+
+
+%正文区
+\begin{document}
+	\maketitle
+	\section{命令行窗口进行链接}
+	首先按确保win10安装了openshell\\
+	打开命令行窗口。\\
+	命令：ssh -p端口号 用户名@ip地址。\\
+	例如：ssh -p22 cuihu@210.40.16.60\\
+	回车，输入密码：cuihu614\\
+	然后就链接如了ubuntu系统了。\\
+	\section{安装anoconda}
+	下载 conda 安装包，然后 bash .... 安装就可以了。\\
+	安装的时候，是否添加到环境变量中，注意选择yes，因为默认是no\\
+	手动添加方法：vim ~/.bashrc\\
+	添加：\verb| export PATH='/home/用户名/anaconda3/bin:$PATH'|\\
+	完成后： esc推出，按   ：x (并推出。)\\
+		当然，安装后记得source ~/.bashrc 激活环境变量。
+	\section{安装虚拟环境}
+	查看虚拟环境： conda info --envs \\
+	新建虚拟环境： conda create --name xxx python=xxxx\\
+	删除虚拟环境： conda remove -name xxx --all\\
+	激活虚拟环境： conda activate xxx\\
+	或者: . activate xxx\\
+	推出虚拟环境： conda deactivate xxxx\\
+	或者 . deactivate xxx\\
+	
+	\section{cuda,cudnn}
+	nvcc -V\\
+	cat /usr/local/cuda/version.txt\\
+	 cat /usr/local/cuda/include/cudnn.h | grep CUDNN\_MAJOR -A 2 \\
+	在服务器上安装cuda：\\
+	下载cuda:\verb|cuda的下载地址: https://developer.nvidia.com/cuda-toolkit-archive|\\
+	安装到指定的个人目录，安装驱动的时候选择no即可。\\
+	参考文章：
+	\verb|https://blog.csdn.net/sinat_20280061/article/details/80421532|\\
+	\verb|https://blog.csdn.net/hizengbiao/article/details/88625044|\\
+	下载cudnn：\verb|cuDNN的下载: https://developer.nvidia.com/rdp/cudnn-archive|\\
+	
+	\begin{lstlisting}
+		sh cuda_8.0.61_375.26_linux.run #开始安装
+		#..一堆协议说明...
+		#直接按q退出协议说明.
+		zerozone@zerozone: accept/decline/quit: accept  #接受协议
+		
+		Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 375.26? 
+		y)es/(n)o/(q)uit: n  #是否显卡驱动包，由于已经安装显卡驱动，选择n
+		
+		Install the CUDA 8.0 Toolkit?
+		(y)es/(n)o/(q)uit: y #是否安装工具包，选择y
+		
+		Enter Toolkit Location
+		[ default is /usr/local/cuda-8.0 ]: #工具包安装地址，
+		这里我输入自己的安装地址：/home/zb/cuda/cuda-8.0/
+		
+		Do you want to install a symbolic link at /usr/local/cuda?
+		(y)es/(n)o/(q)uit: n #添加链接**这里选择n
+		
+		Install the CUDA 8.0 Samples?
+		(y)es/(n)o/(q)uit: y #安装样例，选择y
+		
+		Enter CUDA Samples Location
+		[ default is /root ]:  #样例安装地址,
+		这里我输入自己的安装地址：/home/zb/cuda/cuda-8.0/samples/
+		
+		环境变量：
+		sudo vim ~/.bashrc
+		添加:
+		#cuda path --- install CUDA 10.0 ---
+		export PATH="/home/sdb/614/cuihu/cuda/cuda_10.0/bin/:$PATH"
+		export PATH=/home/sdb/614/cuihu/cuda/cuda_10.0/bin${PATH:+:${PATH}}
+		export LD_LIBRARY_PATH=/home/sdb/614/cuihu/cuda/cuda_10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+		
+		export CUDA_HOME=/usr/local/cuda
+	\end{lstlisting}
+	
+	
+	
+	\section{cudnn}
+	\begin{lstlisting}
+		sudo cp cuda/include/cudnn.h   /home/sdb/614/cuihu/cuda/cuda_10.0/include
+		sudo cp cuda/lib64/libcudnn*   /home/sdb/614/cuihu/cuda/cuda_10.0/lib64
+		sudo chmod a+r /home/sdb/614/cuihu/cuda/cuda_10.0/include/cudnn.h
+		sudo chmod a+r /home/sdb/614/cuihu/cuda/cuda_10.0/lib64/libcudnn*
+	\end{lstlisting}
+	
+	\section{安装pytorch}
+	\begin{lstlisting}
+		-i https://mirrors.ustc.edu.cn/pypi/web/simple\\
+		-i http://pypi.douban.com/simple/\\
+		conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.1
+		pip install torch==1.5.1+cu92 torchvision==0.6.1+cu92 -i 镜像
+		pip install torch==1.5.1+cu91 torchvision==0.6.1+cu91 -i http://pypi.douban.com/simple/
+		
+		pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -i https://pypi.tuna.tsinghua.edu.cn/simple
+		10.1版本：\\
+		在安装目录下\\
+		
+		如果不行的话，直接使用pytorch官网的的链接，服务器上的速度也很快。
+		
+		
+		
+		sh cuda_10.1.243_418.87.00_linux.run\\
+	\end{lstlisting}
+	
+	
+	\section{代码使用gpu指定}
+	\begin{verbatim}
+	1、每个GPU使用者都需进群，并修改自己备注（与服务器里的账户明一致）
+	2、跑任何一个大（显存消耗）的程序都需要指定GPU运行，并指定空闲的GPU，\\
+	以不影响他人的程序运行（通过nvidia-smi指令查看）。\\
+	GPU指定方法：python程序需在程序里主代码添加
+	（1、import os 2、os.environ['CUDA_VISIBLE_DEVICES']）='gpu_number');
+	\\ Matlab程序需在主代码里添加（1、g=gpuDevice(gpu_number); reset(g);）\\
+	
+	
+	3、当所有GPU均被使用时，可以与使用多个GPU的用户私下协商资源分配。\\
+	
+	4、正常情况下不要一个人占用了所有的GPU，\\
+	除非在赶论文实验的（若他人也急需跑程序，应适当关掉一些进程）。\\
+	注：此使用手册是为了使这有限的资源最充分的利用，谢谢大家的配合。\\
+	祝：大家所有程序运行顺畅，实验得到理想结果
+	\end{verbatim}
+
+	\begin{verbatim}
+		采取CUDA环境变量CUDA_VISIBLE_DEVICES来限定程序运行的GPU设备解决问题
+		
+		// CUDA_VISIBLE_DEVICES设置说明，设置device对程序可见
+		CUDA_VISIBLE_DEVICES=1       // 仅使用device1 (即卡一)
+		CUDA_VISIBLE_DEVICES=0,1     // 仅使用device 0和 device1
+		CUDA_VISIBLE_DEVICES="0,1"	 // 同上, 仅使用device 0和 device1
+		CUDA_VISIBLE_DEVICES=0,2,3   // 仅使用device 0, device2和device3
+		CUDA_VISIBLE_DEVICES=2,0,3   // 仅使用device0, device2和device3
+		
+		#那么最后两条的区别是什么呢？
+		CUDA_VISIBLE_DEVICES后面的参数依次是设置gpu[0]，gpu[1], gpu[2]...等的device编号。
+		所以区别在于： 0,2,3意思是gpu[0]指向device0, gpu[1], 指向devcie2, gpu[2]指向device3；
+		而2,0,3意思是gpu[0]指向device2, gpu[1], 指向devcie0, gpu[2]指向device3；
+		
+		再举例说明，如果当前主机有5张显卡，默认情况下5个device对程序都可以见，默认排序device0 - 4。
+		如果现在我们只希望使用第一张和第三张显卡，并且程序代码里看到的分别对应0，1。
+		那么设置应该如下：
+		CUDA_VISIBLE_DEVICES=0，2
+	\end{verbatim}
+	
+	
+	\section{}
+	
+\end{document}
